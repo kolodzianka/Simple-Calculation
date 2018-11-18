@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        
+    </head>
+    <body>
+        <p >
+            <input id="l1" type="text"/>
+        </p>
+        
+        <div id="tablica">
+            <table>
+<tr>
+            
+                <td><button onclick="klik7()">7</button></td>
+                <td><button onclick="klik8()">8</button></td>
+                <td><button onclick="klik9()">9</button></td>
+                <td><button onclick="klikAdd()">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="klik4()">4</button></td>
+                <td><button onclick="klik5()">5</button></td>
+                <td><button onclick="klik6()">6</button></td>
+                <td><button onclick="klikSubstract()">-</button></td>
+            </tr>
+            <tr>
+                    <td><button onclick="klik1()">1</button></td>
+                    <td><button onclick="klik2()">2</button></td>
+                    <td><button onclick="klik3()">3</button></td>
+                    <td><button onclick="klikMultiply()">*</button></td>
+                </tr>
+                <tr>
+                        <td><button onclick="klikClear()">C</button></td>
+                        <td><button onclick="klik0()">0</button></td>
+                        <td><button onclick="klikEqual()">=</button></td>
+                        <td><button onclick="klikDivide()">/</button></td>
+                    </tr>
+                </table>
+
+        </div>
+        <script>
+                var value = document.getElementById("l1").value;
+
+            
+            function klik9(){
+                
+                document.getElementById("l1").value += 9;
+            }
+            function klik8(){
+                document.getElementById("l1").value += 8;
+            }
+            function klik7(){
+                document.getElementById("l1").value += 7;
+            }
+            function klik6(){
+                document.getElementById("l1").value += 6;
+            }
+            function klik5(){
+                document.getElementById("l1").value += 5;
+            }
+            function klik4(){
+                document.getElementById("l1").value += 4;
+            }
+            function klik3(){
+                document.getElementById("l1").value += 3;
+            }
+            function klik2(){
+                document.getElementById("l1").value += 2;
+            }
+            function klik1(){
+                document.getElementById("l1").value += 1;
+            }
+            function klik0(){
+                document.getElementById("l1").value += 0;
+            }
+
+            function klikAdd(){
+                var plus = '+';
+                document.getElementById("l1").value += plus;
+            }
+            function klikSubstract(){
+                var minus = '-';
+                document.getElementById("l1").value += minus;
+            }
+            function klikDivide(){
+                var div = '/';
+                document.getElementById("l1").value += div;
+            }
+            function klikMultiply(){
+                var multip = '*';
+                document.getElementById("l1").value += multip;
+            }
+            function klikClear(){
+                document.getElementById("l1").value ="";
+            }
+            function klikEqual(){
+                var x = String(document.getElementById("l1").value);
+                
+                document.getElementById("l1").value = eval(x);
+            }
+            
+            
+
+
+            </script>
+    </body>
+</html>
